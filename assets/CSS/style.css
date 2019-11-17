@@ -2,22 +2,48 @@
 
 body{
     margin: 0%;
-    padding: 0%;    
+    padding: 0%;  
+    min-width: 1170px;  
 }
 /*HEADER*/
 .header_m{
     float: left;
     width: 100%;
-    height: 718px;
-    background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+    height: 106px;
 } 
+.blackout{
+    background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+}
 
-
-
+.upp-container{
+    height: 730px;
+    background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+}
 
 /* Upper */
+.aurth-window{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #0000cc;
+    border-radius: 10px;
+    color: #0000cc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
 .upper{
-    
     padding-top: 42px;
     font-family: 'Proxima Nova Rg';
     padding-left: 135px;
@@ -118,9 +144,11 @@ body{
 /* SLIDER */
 #block-for-slider{
     font-family: 'Proxima Nova Rg';
+
 }
 #viewport {
     width: 100%;
+    height: 600px;
     display: table;
     position: relative;
     overflow: hidden;
@@ -171,7 +199,7 @@ p {
     font-size: 64px;
     color: #FFFFFF;
     line-height: 64px;
-    /* width: 660px; */
+    width: 660px;
     font-weight: 700;
     display: inline-block;
     padding-top: 150px;
