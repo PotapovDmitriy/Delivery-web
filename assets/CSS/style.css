@@ -1,9 +1,14 @@
 @import url('../fonts/ProximaNova/stylesheet.css');
 
 body{
+    font-family: 'Proxima Nova Rg';
+    max-width: 1440px;
     margin: 0%;
     padding: 0%;  
     min-width: 1170px;  
+    margin-left: auto;
+    margin-right: auto;
+
 }
 /*HEADER*/
 .header_m{
@@ -11,15 +16,151 @@ body{
     width: 100%;
     height: 106px;
 } 
-.blackout{
-    background: rgba(102, 102, 102, 0.5);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
+
+
+
+/* authorization  */
+
+#authorization-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+    rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+.authorization{
+    width: 560px;
+    height: 470px;
+    background:#fff;
+    border-radius: 6px;
+}
+.flex-container{
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#authorization-container:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+#authorization-container :target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility 1s;
+}
+.authorization__content{
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+}
+
+.authorization__auth{
+    margin: 0;
+    padding-left: 70px;
+    padding-top: 18px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 46px;
+
+
+    display: flex;
+    align-items: center;
+    width: 430px;
+    height: 46px;
+}
+.authorization__text{
+    padding-left: 70px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.authorization__input{
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.authorization__button-block{
+    padding-top: 50px;
+    align-self: center;
+}
+.authorization__button{
+    justify-content: center;
+    display: flex;
+    width: 430px;
+    height: 52px;
+    
+    background: #E5E31F;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 15px;
+    color: #2A4F71;
+}
+
+.authorization__button:hover{
+    background-color: #376A9A;
+
+    color: #E5E31F;
+    border: #90bde7;
+    transition:0.5s; 
+}
+.authorization__button-text{
+    width: 430px;
+    height: 52px;
+}
+.authorization__email{
+    padding-top: 48px;
+    width: 430px;
+    height: 48px;
+    padding-bottom: 22px;
+
+}
+.authorization__psw{
+    width: 430px;
+    height: 48px;
+
+}
+.authorization__exit{
+    width: 34px ;
+    height: 34px;
+    padding-right: 26px  ;
+    padding-top: 26px;
+    align-self: flex-end;
+}
+.authorization__input-text{
+    border: 1px solid #23415E;
+    width: 430px;
+    height: 48px;
+    padding-left: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 6px; 
+}
+
+.exit-img{
+    width: 34px;
+    height: 34px;
+}
+.exit-img:hover {
+    width: 38px;
+    height: 38px;
+}
+
+
+/* ------------------------------ */
 
 .upp-container{
     height: 730px;
@@ -27,22 +168,7 @@ body{
 }
 
 /* Upper */
-.aurth-window{
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    padding: 15px;
-    border: 3px solid #0000cc;
-    border-radius: 10px;
-    color: #0000cc;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    background: #fff;
-}
+
 .upper{
     padding-top: 42px;
     font-family: 'Proxima Nova Rg';
@@ -115,19 +241,27 @@ body{
     margin-right: 12px;
     margin-top: 19px;
 }
-.button__login{
-    font-family: 'Proxima Nova Rg';
-    float: right;
+.form__login{
     width: 170px;
     height: 52px;
-    border: 1px solid #E5E31F;
     box-sizing: border-box;
-    border-radius: 10px;
-    background-color: transparent;
-    padding: 15px 0px 15px 0px;
-    color: #E5E31F;
-    font-size: 18px;
-    line-height: 22px;
+    float: right;
+}
+.button__login{
+
+	border: 1px solid;
+	border-color: #E5E31F;
+	color: #E5E31F;
+	border-radius: 10px;
+	font-size: 18px;
+	width: 170px;
+	height: 52px;
+	text-decoration: none;
+	display: inline-block;
+	transition: .3s;
+	font-size: 18px;
+	text-align: center;
+	line-height: 52px;
 }
 
 .button__login:hover{
@@ -201,7 +335,6 @@ p {
     line-height: 64px;
     width: 660px;
     font-weight: 700;
-    display: inline-block;
     padding-top: 150px;
 
 }
@@ -322,7 +455,6 @@ p {
     display: inline-block;
     width: 100%;
     text-align: center;
-    /* margin-top: 75px; */
 }
 /* body_block_1_1 */
 .body_block_1_1{
@@ -458,7 +590,7 @@ footer p{
     margin: 0%;
 }
 
-/* Buttons*/
+
 
 
 
