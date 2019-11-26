@@ -2,6 +2,8 @@ var translateWidth = 0;
 var slideInterval = 5000;
 var flag = true;
 var list = document.getElementById('slidewrapper');
+var slides = document.getElementsByClassName('slide')
+var slidesCount = slides.length;
 var firstLi = list.getElementsByTagName('LI')[0];
 var navBtnId = 0;
 var currentSlide = 1;
@@ -9,7 +11,7 @@ var currentSlide = 1;
 $(document).ready(function () {
     checkSlidePointer();
     var switchInterval = setInterval(nextSlide, slideInterval);
-
+    console.log(slidesCount);
     $('#nav-btns').hover(function(){
         clearInterval(switchInterval);              //don't toggle on hover
     },function() {
@@ -48,7 +50,7 @@ function nextSlide() {
 }
 
 function checkSlidePointer(){
-    if(currentSlide == 1 || currentSlide == 3){
+    if(currentSlide == 1 || currentSlide == slidesCount){
         $('#first').css({
             'background-color': '#346491'
         });
@@ -65,7 +67,7 @@ function checkSlidePointer(){
 $('.slide-nav-btn').click(function() {
     navBtnId = $(this).index();
     if (navBtnId + 1 != currentSlide) {
-        if(currentSlide == 1){
+        if(currentSlide == 1 || currentSlide == slidesCount){
             $('#slidewrapper').css({
                 'transform': 'translate(0, 0)',
                 'transition':' 0s'});
