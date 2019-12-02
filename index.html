@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/header&footer.css">
     <title>Delivery</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -13,8 +14,6 @@
 <body>
 
     <div class="blackout">
-
-
         <div class=" upp-container">
                 <header class = "header_m">
                     <div class= "container">
@@ -187,7 +186,7 @@
 
                 <div class="authorization__input">
                     <div class="authorization__email">
-                        <input class="authorization__input-text" type="text" placeholder="Логин" name="email" required>
+                        <input id = authorization__validate class="authorization__input-text" type="email" placeholder="Логин" name="email" required>
                     </div>
                     <div class="authorization__psw">
                         <input class="authorization__input-text" type="password" placeholder="Пароль" name="psw" required>
@@ -195,13 +194,13 @@
                 </div>
                 <div class = "authorization__button-block">
                     <button class="authorization__button" type="submit">
-                        <p class=" authorization__button-text">Вход</p></button>
+                        <p id = "authorization__submit"class=" authorization__button-text">Вход</p></button>
                 </div>
 
             </div>
 
         </form>
-        <script src="script.js"></script>
+        <script src="assets/js/script.js"></script>
     </div>
 
 </body>
