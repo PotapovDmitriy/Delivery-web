@@ -60,23 +60,32 @@
 
                 </div>
                 <form action="#">
+                    <div class="input-container__container">
 
-                    <div class="input-container__add-img">
-                        <img class="input-container__img" src="assets/vectors/Shape.svg" alt="shape">
-                        <label class="input-container__label">
-                            <span id ="input-container__input-title" class="input-container__input-title">+Добавить изображение</span>
-                            <input id = 'input-container' class="input-container__input-image"  type="file" required>
-                            <span id = "img-wrap" class="input-container__img-wrap">
-                                <img src="image.jpg" alt="">
+                        <div class="input-container__preview">
+                                <div class="input-container__add-img">
+                                    <img class="input-container__img" src="assets/vectors/Shape.svg" alt="shape">
+                                    <label class="input-container__label">
+                                        <span id ="input-container__input-title" class="input-container__input-title">+Добавить изображение</span>
+                                        <input id = 'input-container' class="input-container__input-image"  type="file" required>
+            
+                                    </label>
+                                </div>
+                            <span id = "img-wrap" class="input-container__img-wrap">                          
                             </span>
-                            <p id = "file-name"> text</p>
-                        </label>
-                    </div>
-                    <div class="submit-button">
-                        <button class="submit-button__btn" id = "submit-button" type="submit">
-                            <p class="submit-button__text ">Применить
-                            </p></button>
-                                
+                            <p id = "file-name" class="input-container__file-name"> text</p>
+                            <a href="" onclick="return false;">
+                                <img id="revoke-btn" src="assets/images/exit.PNG" alt="" class="input-container__revoke">
+                            </a>
+
+                            
+                        </div>
+                        <div class="submit-button">
+                            <button class="submit-button__btn" id = "submit-button" type="submit">
+                                <p class="submit-button__text ">Применить
+                                </p></button>
+                                    
+                        </div>
                     </div>
                 </form>
 

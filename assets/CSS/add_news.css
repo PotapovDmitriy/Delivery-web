@@ -1,5 +1,7 @@
 @import url('../fonts/ProximaNova/stylesheet.css');
-
+p{
+    margin: 0%;
+}
 body{
     font-family: 'Proxima Nova Rg';
     max-width: 1600px;
@@ -85,11 +87,25 @@ button{
 .input-container__input-image{
     display: none;
 }
-.input-container__img-wrap{
-    display: none;
+
+.input-container__container{
+    display: flex;
+
+    flex-direction: column;
+    align-content: space-between;
 }
-.input-container__img{
-    /* padding-top: 1px; */
+.input-container__preview{
+    display: flex;
+    height: 50px;
+
+}
+.input-container__revoke{
+    height: 18px;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+#revoke-btn{
+    display: none;
 }
 .input-container__input-title{
     padding-right: 250px;
@@ -100,9 +116,15 @@ button{
     line-height: 24px;
     color: #2A496B;
 }
-#file-name{
+
+.input-container__img{
+    align-self: start;
+}
+.input-container__file-name{
+    align-self: start ;
     display:none;
     color: black;
+    padding-left: 35px;
 }
 .input-container__input-title:hover{
     font-size: 18px;
@@ -136,7 +158,7 @@ button{
     }
 
 .submit-button{
-    padding-top: 114px;
+    padding-top: 104px;
 }
 
 .submit-button__btn{
