@@ -22,7 +22,7 @@ $(document).ready(function () {
 function nextSlide() {
     if(flag){
         flag = false;
-        if(currentSlide == 3){
+        if(currentSlide == slidesCount){
             $('#slidewrapper').css({
                 'transform': 'translate(0, 0)',
                 'transition':' 0s'});
@@ -67,7 +67,7 @@ function checkSlidePointer(){
 $('.slide-nav-btn').click(function() {
     navBtnId = $(this).index();
     if (navBtnId + 1 != currentSlide) {
-        if(currentSlide == 1 || currentSlide == slidesCount){
+        if( currentSlide == slidesCount){
             $('#slidewrapper').css({
                 'transform': 'translate(0, 0)',
                 'transition':' 0s'});
