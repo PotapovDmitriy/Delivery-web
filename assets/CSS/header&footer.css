@@ -163,16 +163,15 @@
     justify-content: space-between;
 }
 .upper__container{
-    padding-top: 13px;
+    
     display: flex;
 }
 
 /* block1 */
 .block1{
-    display: inline-block;
-    /* margin-left: 135px; */
-    height: 100%;
+    display: flex;
     padding-top: 4px;
+    height: 50px;
 }
 .rocket{
     float: left;
@@ -188,17 +187,11 @@
 .block2{
     display: flex;
     padding-left: 50px;
+    padding-top: 16px;
 }
 .line-in-header{
     display: inline-block;
     padding-top: 4px;
-    /* float: left;
-    padding-top: 16px;
-    margin-bottom: 0%;
-    width: 0px;
-    height: 14px;
-    color:  #A9C5E0; */
-
 }
 
 .express{

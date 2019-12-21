@@ -9,6 +9,15 @@ var navBtnId = 0;
 var currentSlide = 1;
 
 $(document).ready(function () {
+    console.log($('#viewport').width());
+    var scr_width = screen.width;
+    var viewport = $('#viewport');
+    if (screen.width <= 768){
+        $('#viewport').width(768);
+        viewport.width(scr_width);
+
+    }
+    console.log(viewport.width());
     checkSlidePointer();
     var switchInterval = setInterval(nextSlide, slideInterval);
     // console.log(slidesCount);
@@ -44,7 +53,7 @@ function nextSlide() {
             'transition-timing-function': 'ease-in-out'
         });
         flag = true;
-        currentSlide = 3;
+        currentSlide = slidesCount;
         checkSlidePointer();
     }
 }

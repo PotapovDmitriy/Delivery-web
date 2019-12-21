@@ -1,18 +1,18 @@
 @import url('../fonts/ProximaNova/stylesheet.css');
 
-    body{
-        font-family: 'Proxima Nova Rg';
-        max-width: 1600px;
-        margin: 0%;
-        padding: 0%;  
-        min-width: 1170px;  
-        margin-left: auto;
-        margin-right: auto;
+body{
+    font-family: 'Proxima Nova Rg';
+    max-width: 1600px;
+    margin: 0%;
+    padding: 0%;  
+    /* min-width: 1170px;   */
+    margin-left: auto;
+    margin-right: auto;
 
-    }
-    button{
-        border-color: rgba(0,0,0,0);
-    }
+}
+button{
+    border-color: rgba(0,0,0,0);
+}
 
 
 .upp-container{
@@ -70,7 +70,7 @@ p {
 }
 .slides{
     display: block;
-    padding-left: 135px;
+    padding-left: 105px;
     padding-right: 135px;
     padding-top: 12px;
 }
@@ -82,7 +82,6 @@ p {
     width: 660px;
     font-weight: 700;
     padding-top: 150px;
-
 }
 .text1{
     font-size: 16px;
@@ -184,9 +183,12 @@ p {
     display: inline-block;
     margin: 0%;
     font-family: "Proxima Nova Rg";
+    display: flex;
+    flex-direction: column;
     
 }
 .body_title_block{
+    align-self: center;
     padding-bottom: 75px;
     padding-top: 96px;
     text-align: center;
@@ -200,9 +202,11 @@ p {
 
 /* body_Block1  */
 .body_block1{
-    display: inline-block;
-    width: 100%;
+    flex-flow: wrap;
+    align-self: center;
+    display: flex;    
     text-align: center;
+    justify-content: center;
 }
 /* body_block_1_1 */
 .body_block_1_1{
@@ -210,16 +214,18 @@ p {
 }
 .cost_img{
     position: relative;
-    margin: 78px 159px 36px 159px;
+    padding: 78px 159px 36px 159px;
 }
-
+.content__mini-block{
+    width: 370px;
+}
 /* body_block_1_2 */
 .body_block_1_2{
     display: inline-block;
 }
 .deliv_img{
     position: relative;
-    margin: 80px 151px 37px 151px;
+    padding: 80px 151px 37px 151px;
 }
 
 /* body_block_1_3 */
@@ -228,7 +234,7 @@ p {
 }
 .pay_img{
     position: relative;
-    margin: 75px 153px 32px 153px;
+    padding: 75px 153px 32px 153px;
 }
 
 
@@ -246,7 +252,7 @@ p {
 }
 .contract_img{
     position: relative;
-    margin: 78px 158px 36px 158px;
+    padding: 78px 158px 36px 158px;
 }
 /* body_block_2_2 */
 .body_block_2_2{
@@ -254,7 +260,7 @@ p {
 }
 .data_img{
     position: relative;
-    margin: 75px 149px 34px 149px;
+    padding: 75px 149px 34px 149px;
 }
 
 
@@ -274,7 +280,7 @@ p {
     text-align: center;
     line-height: 19px;
     width: 370px;
-    margin: 24px 0px 0px 0px;
+    padding-top: 24px;
 }
 /* --------------- */
 
