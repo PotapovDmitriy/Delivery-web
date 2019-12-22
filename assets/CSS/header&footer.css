@@ -196,8 +196,6 @@
 
 .express{
     display: inline;
-    /* float: left;
-    padding-top: 16px; */
     padding-left: 30px;
     width: 300px;
     height: 21px;
@@ -266,8 +264,9 @@
 
 /* footer */
 
-footer{
-    display: block;
+.footer{
+    display: flex;
+    justify-content: space-between;
     background-color:  #23415E;
     padding-top: 89px;
     padding-left: 135px;
@@ -280,12 +279,19 @@ footer{
     padding-bottom: 121px;
     float: left;
 }
+.footer__first-block{
+    width: 805px;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .ft_logo{
     padding-left: 4px;
 }
-
+.ft_info{
+    width: 400px;
+}
 .ft_link{
     text-decoration: none;
     font-family: 'Proxima Nova Lt';
@@ -301,7 +307,7 @@ footer{
     display: inline-block;
     width: 170px;
     height: 144px;
-    padding-left: 280px;
+
 }
 .ft_info_2{
     vertical-align: top ;

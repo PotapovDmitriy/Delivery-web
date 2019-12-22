@@ -9,7 +9,7 @@ var navBtnId = 0;
 var currentSlide = 1;
 
 $(document).ready(function () {
-    console.log($('#viewport').width());
+    
     var scr_width = screen.width;
     var viewport = $('#viewport');
     if (screen.width <= 768){

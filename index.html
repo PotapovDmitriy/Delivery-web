@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <script src="assets/js/forAdaptive.js" >
-        
+    <script src="assets/js/forAdaptiveIndex.js" >     
     </script>
 
     <div class="blackout">
@@ -61,10 +60,10 @@
                                     <div class= "img1" id="car_in_slider">
                                         <img  src="assets/images/s1.png" alt="Slide1">
                                     </div>
-                                    <div class="head1">
+                                    <div class="head1 head-in-slider" id= "head-in-slider">
                                         <p>Срочная доставка день в день</p>
                                     </div>
-                                    <div class= 'text1'>
+                                    <div class= 'text1 text' id = 'text'>
                                         <p>Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</p>
                                     </div>
                                     <div class="btn_block">
@@ -77,10 +76,10 @@
                                     <div class = "img2" id= "file_in_slider" >
                                         <img src="assets/images/s2.png" alt="Slide2">
                                     </div>
-                                    <div class= "head2">
+                                    <div class= "head2 head-in-slider" id= "head-in-slider">
                                         <p>Подписание договора за 1 час</p>                                
                                     </div>
-                                    <div class="text2">
+                                    <div class="text2 text" id = 'text'>
                                         <p>В течение часа наш курьер заберет вашу посылку и подпишет с Вами договор о предоставлении услуг.</p>
                                     </div>
                                     <div class="btn_block">
@@ -93,10 +92,10 @@
                                     <div class= "img1">
                                         <img  src="assets/images/s1.png" alt="Slide1">
                                     </div>
-                                    <div class="head1">
+                                    <div class="head1 head-in-slider" id= "head-in-slider">
                                         <p>Срочная доставка день в день</p>
                                     </div>
-                                    <div class= 'text1'>
+                                    <div class= 'text1 text' id = 'text'>
                                         <p>Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</p>
                                     </div>
                                     <div class="btn_block">
@@ -159,61 +158,70 @@
         </div>
     
         <footer >
-            <div class="ft_name ">
-                <img class="ft_rocket" src="assets/vectors/rocket.svg" alt="rocket">
-                <img class="ft_logo" src="assets/vectors/logo.svg" alt="logo">
+            <div class="footer">
+               
+                <div class="footer__first-block">
+                    <div class="ft_name ">
+                        <img class="ft_rocket" src="assets/vectors/rocket.svg" alt="rocket">
+                        <img class="ft_logo" src="assets/vectors/logo.svg" alt="logo">
+                    </div>
+                    <div class="ft_info">
+                        <div class= ft_info_1>
+                            <a class="ft_link" href="">О компании</a> <br>
+                            <a class="ft_link" href="">Вакансии</a><br>
+                            <a class="ft_link" href="">Клиенту</a><br>
+                            <a class="ft_link" href="">Франчайзинг</a>
+                        </div>
+                        <div class= "ft_info_2">
+                                <a class="ft_link" href="">Доставка из Китая </a><br>
+                                <a class="ft_link" href="">Все услуги</a><br>
+                                <a class="ft_link" href="">Акции</a>    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ft_contactinfo">
+                        <p>manager@uexpress.ru</p>  <br>
+                        <p>115221, г. Челябинск, ул. Северная, д. 29-в </p> <br>
+                        <p>Мы работаем по 24 часа 5 дней в неделю</p> 
+                </div>
             </div>
-            <div class= ft_info_1>
-                <a class="ft_link" href="">О компании</a> <br>
-                <a class="ft_link" href="">Вакансии</a><br>
-                <a class="ft_link" href="">Клиенту</a><br>
-                <a class="ft_link" href="">Франчайзинг</a>
-            </div>
-            <div class= "ft_info_2">
-                    <a class="ft_link" href="">Доставка из Китая </a><br>
-                    <a class="ft_link" href="">Все услуги</a><br>
-                    <a class="ft_link" href="">Акции</a>    
-            </div>
-            <div class="ft_contactinfo">
-                    <p>manager@uexpress.ru</p>  <br>
-                    <p>115221, г. Челябинск, ул. Северная, д. 29-в </p> <br>
-                    <p>Мы работаем по 24 часа 5 дней в неделю</p> 
-            </div>
+            
         </footer>
     
         <form id  ="authorization-container" action="#">
             <div class = "authorization flex-container">
 
-                <div class="authorization__content">
-                    <div class="authorization__exit">
+                <div class="authorization__content adaptive">
+                    <div class="authorization__exit adaptive">
                         <a href="#" aria-label="Close Authorization">
                             <img class="exit-img" src="assets/images/exit.PNG" alt="x">
                         </a>
                     </div>
-                    <h1 class = "authorization__auth">Авторизация</h1>
+                    <h1 class = "authorization__auth adaptive">Авторизация</h1>
 
-                    <p class = "authorization__text">Введите логин и пароль, чтобы войти в личный кабинет</p>
+                    <p class = "authorization__text adaptive">Введите логин и пароль, чтобы войти в личный кабинет</p>
                 </div>
 
 
-                <div class="authorization__input">
-                    <div class="authorization__email">
-                        <input id = authorization__validate class="authorization__input-text" type="email" placeholder="Логин" name="email" required>
+                <div class="authorization__input adaptive">
+                    <div class="authorization__email adaptive">
+                        <input id = 'authorization__validate' class="authorization__input-text adaptive-inside" type="email" placeholder="Логин" name="email" required>
                     </div>
-                    <div class="authorization__psw">
-                        <input class="authorization__input-text" type="password" placeholder="Пароль" name="psw" required>
+                    <div class="authorization__psw adaptive">
+                        <input class="authorization__input-text adaptive-inside" type="password" placeholder="Пароль" name="psw" required>
                     </div>
                 </div>
-                <div class = "authorization__button-block">
-                    <button class="authorization__button" type="submit">
-                        <p id = "authorization__submit"class=" authorization__button-text">Вход</p></button>
+                <div class = "authorization__button-block adaptive">
+                    <button class="authorization__button adaptive-inside" type="submit">
+                        <p id = "authorization__submit" class=" authorization__button-text ">Вход</p></button>
                 </div>
 
             </div>
 
         </form>
         <script src="assets/js/script.js"></script>
-        <script src="assets/js/forAdaptive.js" ></script>
+        
     </div>
 
 </body>
