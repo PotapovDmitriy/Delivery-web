@@ -1,6 +1,7 @@
 @import url('../fonts/ProximaNova/stylesheet.css');
 
 /*HEADER*/
+
 .header_m{
     
     float: left;
@@ -328,4 +329,87 @@
 }
 footer p{
     margin: 0%;
+}
+@media(max-width: 768px){
+
+    .upper{
+        width: 738px;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+    .block3{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+    .number{
+        padding-right: 0px;
+    }
+    .footer{
+        padding-right: 0px;
+        padding-left: 30px;
+        padding-bottom: 96px;
+        width: 738px;
+        flex-direction: column;
+    }
+    .ft_contactinfo{
+        padding-top: 96px;
+        align-self: center;
+    }
+    .footer__first-block{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+@media(max-width: 375px){
+    .block2{
+        display: none;
+    }
+    .block3__phones{
+        display: none;
+    }
+    .upper{
+        width:360px;
+        padding-left: 15px;
+        padding-right: 0px;
+        justify-content: space-around;
+    }
+    .footer__first-block{
+        flex-direction: column;
+    }
+    .ft_name{
+        padding-bottom: 64px;
+    }
+    .ft_contactinfo{
+        padding-top: 64px;
+        align-self: flex-start;
+    }
+    .authorization{
+        width: 375px;
+    }
+    .adaptive{
+        width: 315px;
+        padding-left: 15px;
+    }
+    .adaptive-inside{
+        width: 315px;
+    }
+    .footer{
+        width: 360px;
+        padding-left: 15px;
+        padding-bottom: 96px;
+        padding-right: 0px;
+        flex-direction: column;
+    }
+    .authorization{
+        width: 375px;
+    }
+    .ft_info{
+        width: 360px;
+    }
+    .ft_info_2{
+        width: 150px;
+    }
+
+
 }

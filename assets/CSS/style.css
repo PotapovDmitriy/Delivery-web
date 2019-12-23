@@ -5,7 +5,7 @@ body{
     max-width: 1600px;
     margin: 0%;
     padding: 0%;  
-    /* min-width: 1170px;   */
+    min-width: 1170px;  
     margin-left: auto;
     margin-right: auto;
 
@@ -203,9 +203,11 @@ p {
 }
 
 /* body_Block1  */
+
 .body_block1{
     flex-flow: wrap;
     align-self: center;
+    width: 1110px;
     display: flex;    
     text-align: center;
     justify-content: center;
@@ -287,8 +289,82 @@ p {
 /* --------------- */
 
 
+@media (max-width: 768px){
 
+.blackout{
+    width: 768px;
+    
+}
+body{
+    width: 768px;
+    min-width: 400px;
+}
+.content{
+    width: 768px;
+}
+#file_in_slider{
+    display: none;
+}
+.slides{
+    padding-left: 30px;
+    width: 738px;
+}
+.slide{
+    width: 738px;
+}
+.slides2{
+    padding-left: 30px;
+    width: 738px;
+}
+.body_block1{
+    width: 768px;
 
+}
+.img1{
+    display: none;
+}
+#car_in_slider{
+    display: none;
+}
+}
+
+@media (max-width: 375px){
+
+    .blackout{
+        width: 375px;        
+    }
+    .content{
+        width: 375px;
+    }
+    .body_block1{
+        width: 375px;
+    }
+    body{
+        width: 375px;
+        min-width: 320px;
+    }
+    .slides2{
+        padding-left: 15px;
+    }
+    
+    .slides{
+        padding-left: 15px;
+    }
+    .text{
+        width: 345px;
+    }
+    .head-in-slider{
+        width: 345px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .button__order{
+        width: 345px;
+    }
+    .img1{
+        display: none;
+    }
+}
 
 
 

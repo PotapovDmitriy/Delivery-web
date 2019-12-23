@@ -209,3 +209,66 @@ button{
         font-size: 18px;
         color: #2A4F71;
     }
+@media (max-width: 768px){
+    .upper{
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+    .main-content{
+        padding-left: 30px;
+        
+    }
+    #news-text{
+        width: 715px;
+    }
+    .input-container__symbols-counter{
+        width:715px
+    }
+    .input-container__preview{
+        width: 715px;
+    }
+    .input-container__label{
+        width: 250px;
+    }
+    
+}
+    
+@media (max-width: 375px){
+
+    .upper{
+        padding-left: 15px;
+        padding-right: 0px;
+        justify-content: space-around;
+    }
+    .slides{
+        padding-left: 15px;
+    }
+    .text{
+        width: 345px;
+    }
+    .head-in-slider{
+        width: 345;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .button__order{
+        width: 345px;
+    }
+    .main-content{
+        padding-left: 15px;
+    }
+    #news-text{
+        width: 345px;
+    }
+    .input-container__symbols-counter{
+        width: 345px;
+    }
+    .input-container__preview{
+        width: 345px;
+    }
+    .input-container__visible-part{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
