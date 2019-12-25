@@ -323,15 +323,33 @@ body{
 .img1{
     display: none;
 }
-#car_in_slider{
+.slide{
+    min-width: 600px;
+    width: 100%;
+    max-width: 768px;
+    align-self: center;
+
+}
+.slides2{
+    width: 100%;
+}
+.slides{
+    width: 100%;
+}
+/* #car_in_slider{
     display: none;
-}
+} */
 }
 
-@media (max-width: 375px){
-
+@media (max-width: 425px){
+    .upper{
+        min-width: 375px;
+        width: 90%;
+        
+    }
     .blackout{
-        width: 375px;        
+        min-width: 375px;
+        width: 100%;        
     }
     .content{
         width: 375px;
@@ -340,8 +358,10 @@ body{
         width: 375px;
     }
     body{
-        width: 375px;
+        width: 100%;
         min-width: 320px;
+        padding: 0%;
+        margin: 0%;
     }
     .slides2{
         padding-left: 15px;
@@ -364,6 +384,21 @@ body{
     .img1{
         display: none;
     }
+    .slide{
+        min-width: 375px;
+        width: 100%;
+        max-width: 425px;
+        align-self: center;
+
+    }
+    .slides2{
+        width: 100%;
+    }
+    .slides{
+        width: 100%;
+    }
+
+
 }
 
 

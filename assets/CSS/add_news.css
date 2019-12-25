@@ -230,26 +230,28 @@ button{
     .input-container__label{
         width: 250px;
     }
+    .input-container__visible-part{
+        display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
     
 }
     
-@media (max-width: 375px){
-
+@media (max-width: 425px){
+    .up-container{
+        min-width: 375px;
+        width: 100%;
+    }
     .upper{
+        width: 90%;
+        min-width: 360px;
         padding-left: 15px;
         padding-right: 0px;
         justify-content: space-around;
     }
-    .slides{
-        padding-left: 15px;
-    }
     .text{
         width: 345px;
-    }
-    .head-in-slider{
-        width: 345;
-        font-size: 38px;
-        line-height: 46px;
     }
     .button__order{
         width: 345px;
@@ -269,6 +271,22 @@ button{
     .input-container__visible-part{
         display: flex;
         flex-direction: column;
+    }
+    .input-container__input-title{
+        width: 300px;
+        padding-right: 0px;
+    }
+    .input-container__input-title:hover{
+        width: 72%;
+    }
+    .input-container__img-wrap{
+        padding-left: 10px;
+        width: 50px;
+        display: flex;
+    }
+    .flex-mobile{
+        display: flex;
+        padding-top: 10px;
     }
 
 }
