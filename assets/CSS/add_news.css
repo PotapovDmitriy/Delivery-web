@@ -209,6 +209,17 @@ button{
         font-size: 18px;
         color: #2A4F71;
     }
+
+
+    .input-container__visible-part{
+        display: flex;
+    }
+    
+
+
+
+
+
 @media (max-width: 768px){
     .upper{
         padding-left: 30px;
