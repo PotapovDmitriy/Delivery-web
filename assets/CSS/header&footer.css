@@ -364,6 +364,7 @@ footer p{
 }
 @media(max-width: 425px){
 
+
     .block2{
         display: none;
     }
@@ -417,6 +418,9 @@ footer p{
     }
     .ft_info_2{
         width: 150px;
+    }
+    .authorization__exit{
+        width: 0px;
     }
 
 
