@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Proxima Nova Rg';
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0%;
     padding: 0%;  
     min-width: 1170px;  
@@ -342,20 +342,23 @@ body{
 }
 
 @media (max-width: 425px){
-    .upper{
-        min-width: 375px;
-        width: 90%;
+    /* .upper{
+        min-width: 320px;
+        width: 80%;
         
-    }
+    } */
     .blackout{
-        min-width: 375px;
+        /* min-width: 375px; */
         width: 100%;        
     }
     .content{
-        width: 375px;
+        width: 100%;
     }
     .body_block1{
-        width: 375px;
+        width: 100%;
+    }
+    .post{
+        width: 90%;
     }
     body{
         width: 100%;
@@ -369,36 +372,55 @@ body{
     
     .slides{
         padding-left: 15px;
+        width: 100%;
     }
     .text{
-        width: 345px;
+        width: 92%;
     }
     .head-in-slider{
-        width: 345px;
+        width: 92%;
         font-size: 38px;
         line-height: 46px;
     }
     .button__order{
-        width: 345px;
+        width: 92%;
     }
     .img1{
         display: none;
     }
     .slide{
-        min-width: 375px;
+        min-width: 320px;
         width: 100%;
         max-width: 425px;
         align-self: center;
 
     }
     .slides2{
-        width: 100%;
+        width: 95%;
     }
     .slides{
+        width: 95%;
+    }
+    .upp-container{
         width: 100%;
     }
-
-
+    .content__img{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .content__mini-block{
+        width: 96%;
+    }
+    .h_post{
+        width: 96%;
+    }
+    
+}
+@media (max-width: 330px){
+    .head1{
+        padding-top:140px ;
+    }
+    
 }
 
 

@@ -4,7 +4,7 @@ p{
 }
 body{
     font-family: 'Proxima Nova Rg';
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0%;
     padding: 0%; 
     margin-left: auto;
@@ -250,34 +250,34 @@ button{
 }
     
 @media (max-width: 425px){
-    .up-container{
+    /* .up-container{
         min-width: 375px;
         width: 100%;
-    }
+    } */
     .upper{
         width: 90%;
-        min-width: 360px;
+        min-width: 300px;
         padding-left: 15px;
         padding-right: 0px;
         justify-content: space-around;
     }
     .text{
-        width: 345px;
+        width: 90%;
     }
     .button__order{
-        width: 345px;
+        width: 90%;
     }
     .main-content{
         padding-left: 15px;
     }
     #news-text{
-        width: 345px;
+        width :90%;
     }
     .input-container__symbols-counter{
-        width: 345px;
+        width: 90%;
     }
     .input-container__preview{
-        width: 345px;
+        width: 90%;
     }
     .input-container__visible-part{
         display: flex;
@@ -298,6 +298,9 @@ button{
     .flex-mobile{
         display: flex;
         padding-top: 10px;
+    }
+    .authorization__button{
+        width: 90%;
     }
 
 }
